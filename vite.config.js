@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/gl_sports_centrum/'
+  base: '/gls_kakinada/'
 })
