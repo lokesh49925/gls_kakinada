@@ -1,0 +1,250 @@
+.footer {
+  background: #6b8b97;
+  color: #fff;
+  padding: 1.5rem 0 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  margin: 0 0.5rem 1.5rem;
+  text-align: left;
+  min-width: 220px;
+  overflow-wrap: anywhere;
+}
+.footer-bottom a{
+  text-decoration: none;
+  color:#033C4D;
+}
+.footer-logo-img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.3rem;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover,
+.footer-section .map-link:hover {
+  color: #033C4D;
+  text-decoration: underline;
+}
+
+.para {
+  color: #FFFFFF;
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.quick {
+  color:#033C4D;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Krona One", sans-serif;
+}
+
+.specialties li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.inquiries {
+  margin-top: 0.5rem;
+}
+
+.footer-social {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: nowrap; /* Ensures single row on desktop */
+  justify-content: flex-start;
+}
+
+.footer-social .social-icon {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+
+
+.footer-divider {
+  border: none;
+  border-top: 3px solid #b0bec5;
+  margin: 1rem 0;
+}
+
+.pad {
+   padding-top: 10px;
+
+}
+
+
+span {
+  color: #033C4D;
+  text-decoration: underline;
+
+}
+
+.footer-bottom {
+  text-align: center;
+  color:#033C4D;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+  padding: 0.5rem 0;
+  overflow-wrap: anywhere;
+}
+.mar {
+  margin-left: -10px;
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+
+.specialty-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+}
+
+/* Large screens (desktops/laptops) */
+@media (min-width: 1024px) {
+  .footer-top {
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: nowrap; /* Ensures all sections stay in a single row */
+    justify-content: space-between; /* Distributes sections evenly */
+    gap: 1rem; /* Reduced gap for better spacing */
+  }
+  .footer-section {
+    flex: 1 1 0; /* Equal width for all sections */
+    min-width: 200px; /* Slightly reduced min-width to ensure fit */
+    max-width: 300px; /* Optional: limits section width to prevent stretching */
+  }
+  .footer-social {
+    flex-wrap: nowrap; /* Ensures single row on laptops */
+    justify-content: flex-start;
+  }
+  .footer-logo-img {
+  width: 225px;
+}
+}
+
+/* Tablets (600px - 1023px) */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  .footer-section {
+    min-width: 0;
+    margin: 0;
+  }
+  .footer-section:nth-child(1) { grid-column: 1; grid-row: 1; }
+  .footer-section:nth-child(2) { grid-column: 2; grid-row: 1; }
+  .footer-section:nth-child(3) { grid-column: 1; grid-row: 2; }
+  .footer-section:nth-child(4) { grid-column: 2; grid-row: 2; }
+  .footer-logo-img {
+    width: 200px;
+  }
+  .footer-section h4 {
+    font-size: 0.95rem;
+  }
+  .footer-section p,
+  .footer-section a {
+    font-size: 0.85rem;
+  }
+  .footer-social {
+    flex-wrap: wrap; /* Allows wrapping on tablets if needed */
+  }
+}
+
+/* Phones and small tablets (max-width: 599px) */
+@media (max-width: 599px) {
+  .footer {
+    padding: 1rem 0;
+  }
+  .footer-top {
+    flex-direction: column;
+    padding: 0 0.5rem;
+    gap: 1rem;
+  }
+  .footer-section {
+    flex: 1 1 100%;
+    min-width: 0;
+    margin: 0 0 1rem 0;
+  }
+  .footer-logo-img {
+    width: 135px;
+  }
+  .footer-section h4 {
+    font-size: 0.9rem;
+  }
+  .footer-section p,
+  .footer-section a {
+    font-size: 0.8rem;
+  }
+  .footer-social {
+    flex-wrap: wrap; /* Wraps on phones */
+  }
+  .footer-social .social-icon {
+    font-size: 1.1rem;
+  }
+  .footer-bottom {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.2rem;
+  }
+  .mar {
+    margin-left: 0px;
+    font-size: 17px;
+
+  }
+
+}

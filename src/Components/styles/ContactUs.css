@@ -1,0 +1,622 @@
+/* Original CSS (Unchanged) */
+.contact-wrapper {
+  
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  margin-top: 50px;
+  background-color: rgba(168, 196, 205, 1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.contact-logo {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.contact-card h2 {
+  font-size: 36px;
+  color: rgba(3, 60, 77, 1);
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-family: var(--font-family-krona);
+}
+
+.contact-card p {
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  line-height: 100%;
+}
+
+/* Responsive Design for contact-wrapper (Unchanged) */
+
+/* Mobile Devices (min: 0px, max: 767px) */
+@media (min-width: 0px) and (max-width: 767px) {
+  .contact-wrapper {
+    padding: 20px 10px;
+  }
+
+  .contact-card {
+    padding: 20px 15px;
+    width: 95%;
+  }
+
+  .contact-logo {
+    height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .contact-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .contact-card p {
+    font-size: 14px;
+  }
+}
+
+/* Tablet Devices (min: 768px, max: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-wrapper {
+    padding: 30px 15px;
+  }
+
+  .contact-card {
+    padding: 30px 20px;
+    width: 90%;
+  }
+
+  .contact-logo {
+    height: 35px;
+    margin-bottom: 18px;
+  }
+
+  .contact-card h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .contact-card p {
+    font-size: 16px;
+  }
+}
+
+/* Laptop Devices (min: 1024px, max: 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .contact-wrapper {
+    padding: 40px 20px;
+  }
+
+  .contact-card {
+    padding: 35px 25px;
+    width: 85%;
+  }
+
+  .contact-logo {
+    height: 38px;
+    margin-bottom: 18px;
+  }
+
+  .contact-card h2 {
+    font-size: 32px;
+    margin-bottom: 13px;
+  }
+
+  .contact-card p {
+    font-size: 17px;
+  }
+}
+
+/* Desktop Devices (min: 1440px) */
+@media (min-width: 1440px) {
+  .contact-wrapper {
+    padding: 50px 20px;
+  }
+
+  .contact-card {
+    padding: 40px 30px;
+    width: 90%;
+  }
+
+  .contact-logo {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .contact-card h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .contact-card p {
+    font-size: 18px;
+  }
+}
+
+/* Original CSS for contact-details-section (Unchanged) */
+.contact-details-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  justify-content: center;
+}
+
+.contact-info-card {
+  background: rgba(233, 233, 233, 1);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-info-card h2 {
+  font-family: var(--font-family-krona);
+  font-size: 30px;
+  color: #0f3b47;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.info-block {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.info-block img {
+  width: 25px;
+  height: 25px;
+}
+
+.info-block h4 {
+  font-family: var(--font-family-krona);
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #111;
+}
+
+.info-block p {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.map-card {
+  flex: 1;
+  max-width: 750px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 100%;
+  width: 500px;
+  min-height: 250px;
+  border: none;
+  border-radius: 12px;
+}
+
+.find-us h3 {
+  font-family: var(--font-family-krona);
+  font-weight: 400;
+  font-size: 30px;
+  color: #0f3b47;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+/* Responsive Design for contact-details-section */
+
+/* Mobile Devices (min: 0px, max: 767px) */
+@media (min-width: 0px) and (max-width: 767px) {
+  .contact-details-section {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+
+  .contact-info-card {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .contact-info-card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .info-block img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .info-block h4 {
+    font-size: 16px;
+  }
+
+  .info-block p {
+    font-size: 12px;
+  }
+
+  .map-card {
+    max-width: 100%;
+  }
+
+  .map-card iframe {
+    min-height: 200px;
+    width: 100%;
+  }
+
+  .find-us h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Tablet Devices (min: 768px, max: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-details-section {
+    padding: 30px 15px;
+  }
+
+  .contact-info-card {
+    padding: 25px;
+    max-width: 400px;
+  }
+
+  .contact-info-card h2 {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .info-block img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .info-block h4 {
+    font-size: 18px;
+  }
+
+  .info-block p {
+    font-size: 13px;
+  }
+
+  .map-card {
+    max-width: 600px;
+  }
+
+  .map-card iframe {
+    min-height: 220px;
+  }
+
+  .find-us h3 {
+    font-size: 26px;
+    margin-bottom: 9px;
+  }
+}
+
+/* Laptop Devices (min: 1024px, max: 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .contact-details-section {
+    padding: 35px 20px;
+  }
+
+  .contact-info-card {
+    padding: 28px;
+    max-width: 450px;
+  }
+
+  .contact-info-card h2 {
+    font-size: 28px;
+    margin-bottom: 19px;
+  }
+
+  .info-block img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .info-block h4 {
+    font-size: 19px;
+  }
+
+  .info-block p {
+    font-size: 14px;
+  }
+
+  .map-card {
+    max-width: 650px;
+  }
+
+  .map-card iframe {
+    min-height: 240px;
+  }
+
+  .find-us h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Desktop Devices (min: 1440px) */
+@media (min-width: 1440px) {
+  .contact-details-section {
+    padding: 40px 20px;
+  }
+
+  .contact-info-card {
+    padding: 30px;
+    max-width: 500px;
+  }
+
+  .contact-info-card h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .info-block img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .info-block h4 {
+    font-size: 20px;
+  }
+
+  .info-block p {
+    font-size: 14px;
+  }
+
+  .map-card {
+    max-width: 750px;
+  }
+
+  .map-card iframe {
+    min-height: 250px;
+  }
+
+  .find-us h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* inquiry section */
+.inquiry-section {
+  padding: 50px 20px;
+  text-align: center;
+  
+}
+
+.inquiry-section h2 {
+  font-size: 36px;
+  color: rgba(3, 60, 77, 1);
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-family: var(--font-family-krona);
+}
+
+.inquiry-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inquiry-form  h4 {
+    font-family: var(--font-family-inter);
+    text-align: initial;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+.inquiry-form input,
+.inquiry-form textarea {
+  padding: 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(217, 217, 217, 1);
+  outline: none;
+  resize: none;
+  font-family: var(--font-family-inter);
+  font-weight: 400;
+}
+
+.inquiry-form button {
+  font-family: var(--font-family-inter);
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #5c8490;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.inquiry-form button:hover {
+  background-color: #4a6d7c;
+}
+
+.inquiry-form .icon img{
+  width: 20px;
+  height:20px;
+}
+
+/* Responsive Design */
+
+/* Mobile Devices (min: 0px, max: 767px) */
+@media (min-width: 0px) and (max-width: 767px) {
+  .inquiry-section {
+    padding: 20px 10px;
+  }
+
+  .inquiry-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .inquiry-form {
+    max-width: 100%;
+    gap: 15px;
+  }
+
+  .inquiry-form h4 {
+    font-size: 16px;
+  }
+
+  .inquiry-form input,
+  .inquiry-form textarea {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .inquiry-form button {
+    padding: 10px;
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .inquiry-form .icon img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Tablet Devices (min: 768px, max: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .inquiry-section {
+    padding: 30px 15px;
+  }
+
+  .inquiry-section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .inquiry-form {
+    max-width: 500px;
+    gap: 18px;
+  }
+
+  .inquiry-form h4 {
+    font-size: 17px;
+  }
+
+  .inquiry-form input,
+  .inquiry-form textarea {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .inquiry-form button {
+    padding: 12px;
+    font-size: 15px;
+    gap: 7px;
+  }
+
+  .inquiry-form .icon img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Laptop Devices (min: 1024px, max: 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .inquiry-section {
+    padding: 40px 20px;
+  }
+
+  .inquiry-section h2 {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+
+  .inquiry-form {
+    max-width: 550px;
+    gap: 20px;
+  }
+
+  .inquiry-form h4 {
+    font-size: 17.5px;
+  }
+
+  .inquiry-form input,
+  .inquiry-form textarea {
+    padding: 14px;
+    font-size: 13.5px;
+  }
+
+  .inquiry-form button {
+    padding: 13px;
+    font-size: 15.5px;
+    gap: 7.5px;
+  }
+
+  .inquiry-form .icon img {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+/* Desktop Devices (min: 1440px) */
+@media (min-width: 1440px) {
+  .inquiry-section {
+    padding: 50px 20px;
+  }
+
+  .inquiry-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .inquiry-form {
+    max-width: 600px;
+    gap: 20px;
+  }
+
+  .inquiry-form h4 {
+    font-size: 18px;
+  }
+
+  .inquiry-form input,
+  .inquiry-form textarea {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .inquiry-form button {
+    padding: 14px;
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .inquiry-form .icon img {
+    width: 20px;
+    height: 20px;
+  }
+}

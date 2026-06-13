@@ -1,0 +1,234 @@
+.product-card {
+  border-radius: 1.25rem;
+  background-color: #E9E9E9;
+  overflow: hidden;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 340px;
+  height: 300px;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content p {
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  text-align: left;
+}
+
+.tag {
+  color: #d1840f;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.title1 {
+  font-size: 20px;
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+  color: #111;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0.9rem;
+}
+
+.features h4 {
+  font-size: 18px; /* Corrected from 18pxrem to 18px */
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.features ul {
+  padding-left: 1.25rem;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  color: #222;
+  line-height: 1.5;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 5px;
+  color: #3B65CE;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.contact {
+  text-align: right;
+}
+
+.tag-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* Responsive Design with Min-Max Width Ranges */
+
+/* Mobile Devices (min: 0px, max: 767px) */
+@media (min-width: 0px) and (max-width: 767px) {
+  .product-card {
+    max-width: 100%;
+    width: 70%;
+  }
+
+  .img {
+    width: 100%;
+    height: 170px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .title1 {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .features h4 {
+    font-size: 16px;
+  }
+
+  .features ul {
+    font-size: 10px;
+  }
+
+  .contact-link {
+    font-size: 12px;
+  }
+}
+
+/* Tablet Devices (min: 768px, max: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .product-card {
+    width: 320px;
+  }
+
+  .img {
+    width: 320px;
+    height: 196px;
+  }
+
+  .card-content {
+    padding: 18px;
+  }
+
+  .title1 {
+    font-size: 19px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .features h4 {
+    font-size: 17px;
+  }
+
+  .features ul {
+    font-size: 11px;
+  }
+
+  .contact-link {
+    font-size: 13px;
+  }
+}
+
+/* Laptop Devices (min: 1024px, max: 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .product-card {
+    width: 340px;
+  }
+
+  .img {
+    width: 340px;
+    height: 248px;
+  }
+
+  .card-content {
+    padding: 19px;
+  }
+
+  .title1 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .features h4 {
+    font-size: 18px;
+  }
+
+  .features ul {
+    font-size: 12px;
+  }
+
+  .contact-link {
+    font-size: 14px;
+  }
+}
+
+/* Desktop Devices (min: 1440px) */
+@media (min-width: 1440px) {
+  .product-card {
+    width: 310px;
+  }
+
+  .img {
+    width: 310px;
+    height: 210px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .title1 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .features h4 {
+    font-size: 18px;
+  }
+
+  .features ul {
+    font-size: 12px;
+  }
+
+  .contact-link {
+    font-size: 14px;
+  }
+}

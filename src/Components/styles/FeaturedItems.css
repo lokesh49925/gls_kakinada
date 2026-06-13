@@ -1,0 +1,211 @@
+.featured-section {
+  padding: 40px 20px;
+  text-align: center;
+  color: #333333;
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-normal);
+}
+
+.featured-section h2 {
+  font-size: 1.8rem;
+  font-family: var(--font-family-krona);
+  color: #033C4D;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cards {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #7E9BA4;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cards::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #033C4D 0%, #02232d 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cards::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #033C4D 0%, #02232d 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.cards:hover::after {
+  filter: blur(30px);
+}
+
+.cards:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.cards-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow cards to wrap to next row */
+  gap: 60px; /* Reduced from 100px for better fit across devices */
+  padding: 25px;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+/* Ensure each card takes appropriate space */
+.cards {
+  flex: 0 0 190px; /* Fixed width for cards, no growing */
+}
+
+/* Mobile Devices (min: 320px, max: 767px) - 1 card per row */
+@media (min-width: 320px) and (max-width: 767px) {
+  .cards-column {
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .cards {
+    flex: 0 0 100%; /* Full width for single card */
+    max-width: 190px; /* Maintain card width */
+    margin: 0 auto; /* Center the card */
+  }
+   .card-contents p {
+        font-size: 16px;
+        margin-bottom: 0px;
+        color: white;
+        font-weight: 900;
+    }
+}
+
+/* Tablet Devices (min: 768px, max: 1023px) - 2 cards per row */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cards-column {
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .cards {
+    flex: 0 0 calc(50% - 15px); /* Two cards, accounting for gap */
+    max-width: 190px;
+  }
+   .cards-contents p {
+        font-size: 16px;
+        margin-bottom: 0px;
+        color: white;
+        font-weight: 900;
+    }
+}
+
+/* Laptop Devices (min: 1024px, max: 1439px) - 4 cards per row */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .cards-column {
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .cards {
+    flex: 0 0 calc(25% - 15px); /* Four cards, accounting for gap */
+    max-width: 190px;
+  }
+
+   .cards-contents p {
+        font-size: 16px;
+        margin-bottom: 0px;
+        color: white;
+        font-weight: 900;
+    }
+}
+
+/* Desktop Devices (min: 1440px) - 4 cards per row */
+@media (min-width: 1440px) {
+  .cards-column {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .cards {
+    flex: 0 0 calc(25% - 22.5px); /* Four cards, accounting for gap */
+    max-width: 190px;
+  }
+
+      .cards-contents p {
+        font-size: 16px;
+        margin-bottom: 0px;
+        color: white;
+        font-weight: 900;
+    }
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cards-contents {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+}
+
+.cards-contents p {
+  color: #ffffff;
+  font-weight: 900;
+  font-family: var(--font-family-krona);
+}
+
+.cards-contents {
+  padding: 20px;
+  text-align: left;
+}
+
+.cards-contents p {
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  text-align: left;
+}
+
+.cards-contents p {
+    width: 100%;
+    text-align: justify;
+    font-size: 16px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: -16px;
+    font-family: var(--font-family-inter);
+}

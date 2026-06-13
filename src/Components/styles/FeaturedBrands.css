@@ -1,0 +1,198 @@
+/* Original CSS (Unchanged) */
+.featured-container {
+  text-align: center;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+.featured-container h2 {
+  margin-bottom: 10px;
+  height: 50px;
+  color: rgba(3, 60, 77, 1);
+  font-weight: 400;
+  font-family: var(--font-family-krona);
+  font-size: 40px;
+}
+
+.featured-container p {
+  color: black;
+  font-weight: 400;
+  font-family: var(--font-family-inter);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1400px; /* Added to constrain grid width */
+  margin: 0 auto; /* Center the grid */
+}
+
+.brand-card {
+  background-color: rgba(233, 233, 233, 1);
+  border-radius: 10px;
+  padding: 10px;
+  width: 202px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-card img {
+  max-width: 90px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+
+/* Mobile Devices (min: 0px, max: 767px) */
+@media (min-width: 0px) and (max-width: 767px) {
+  .featured-container {
+    padding: 15px;
+  }
+
+  .featured-container h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    height: 40px;
+  }
+
+  .featured-container p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr); /* Updated to 2 columns for mobile */
+    gap: 15px;
+    max-width: 100%; /* Ensure grid fits within viewport */
+  }
+
+  .brand-card {
+    width: 100%; /* Full width to prevent overflow */
+    height: 70px;
+    padding: 8px;
+    max-width: 180px; /* Adjusted to fit 2 columns comfortably */
+    margin: 0 auto; /* Center the card */
+  }
+
+  .brand-card img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+}
+
+/* Tablet Devices (min: 768px, max: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .featured-container {
+    padding: 20px;
+  }
+
+  .featured-container h2 {
+    font-size: 28px;
+    margin-bottom: 9px;
+    height: 45px;
+  }
+
+  .featured-container p {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablet */
+    gap: 18px;
+    max-width: 100%;
+  }
+
+  .brand-card {
+    width: 100%; /* Full width within grid */
+    height: 80px;
+    padding: 9px;
+    max-width: 250px; /* Adjusted to fit 3 columns */
+    margin: 0 auto;
+  }
+
+  .brand-card img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+/* Laptop Devices (min: 1024px, max: 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .featured-container {
+    padding: 25px;
+  }
+
+  .featured-container h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    height: 48px;
+  }
+
+  .featured-container p {
+    font-size: 19px;
+    margin-bottom: 19px;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for laptop */
+    gap: 19px;
+    max-width: 100%;
+  }
+
+  .brand-card {
+    width: 100%; /* Full width within grid */
+    height: 85px;
+    padding: 9.5px;
+    max-width: 300px; /* Adjusted to fit 4 columns */
+    margin: 0 auto;
+  }
+
+  .brand-card img {
+    max-width: 85px;
+    max-height: 85px;
+  }
+}
+
+/* Desktop Devices (min: 1440px) */
+@media (min-width: 1440px) {
+  .featured-container {
+    padding: 30px;
+  }
+
+  .featured-container h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    height: 50px;
+  }
+
+  .featured-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(6, 1fr); /* 6 columns for desktop */
+    gap: 20px;
+    max-width: 1400px;
+  }
+
+  .brand-card {
+    width: 202px; /* Restore original width */
+    height: 90px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .brand-card img {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
